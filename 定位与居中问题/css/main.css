@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.main {
+    height: 200px;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #ccc;
+}
+
+.main .one {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fc0;
+    height: 50px;
+    width: 50px;
+    border-radius: 0 0 50px 0;
+}
+
+.main .two {
+    position: absolute;
+    top: 150px;
+    left: 350px;
+    background: #fc0;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px 0 0 0;
+}
