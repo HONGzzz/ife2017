@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>4</title>
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+        }
+        
+        #container {
+            width: 1000px;
+            height: 200px;
+            top: 30%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+        }
+        
+        ul#nums {
+            padding: 0;
+            height: 90px;
+            width: 400px;
+        }
+        
+        #nums li {
+            list-style: none;
+            height: 40px;
+            width: 40px;
+            margin: 5px;
+            background: red;
+            text-align: center;
+            line-height: 40px;
+            float: left;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+        <input type="text" id="input">
+        <button id="left-in">左侧入</button>
+        <button id="right-in">右侧入</button>
+        <button id="left-out">左侧出</button>
+        <button id="right-out">右侧出</button>
+
+        <br>
+
+        <ul id="nums">
+
+        </ul>
+    </div>
+
+    <script type="text/javascript">
+        window.onload = function () {
+            var btn1 = document.getElementById('left-in'),
+                btn2 = document.getElementById('right-in'),
+                btn3 = document.getElementById('left-out'),
+                btn4 = document.getElementById('right-out'),
+                input = document.getElementById('input'),
+                nums = document.getElementById('nums');
+
+            function deletenum() {
+                nums.removeChild(this);
+            }
+
+            function leftin() {
+                var str = input.value;
+                if (str) {
+                    input.value = "";
+                    var li = document.createElement('li');
+                    nums.insertBefore(li, nums.firstChild);
+                    li.innerHTML = str;
+                    li.addEventListener('click', deletenum, false);
+                }
+            }
+
+            function rightin() {
+                var str = input.value;
+                if (str) {
+                    input.value = "";
+                    var li = document.createElement('li');
+                    nums.appendChild(li);
+                    li.innerHTML = str;
+                    li.addEventListener('click', deletenum, false);
+                }
+            }
+
+            function leftout() {
+                var remove = nums.removeChild(nums.firstChild);
+                alert(remove.innerHTML);
+            }
+
+            function rightout() {
+                var remove = nums.removeChild(nums.lastChild);
+                alert(remove.innerHTML);
+            }
+
+
+            btn1.addEventListener('click', leftin, false);
+            btn2.addEventListener('click', rightin, false);
+            btn3.addEventListener('click', leftout, false);
+            btn4.addEventListener('click', rightout, false);
+
+        }
+    </script>
+</body>
+
+</html>
