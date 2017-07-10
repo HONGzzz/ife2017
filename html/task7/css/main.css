@@ -25,6 +25,7 @@ header .banner-left{
     position: relative;
     left: 7%;
     width: 10%;
+    height: 60px;
     vertical-align: middle;
     text-align: center;
     line-height: 60px;
@@ -294,7 +295,6 @@ section.fourth .select-box select{
     border: 1px solid #fff;
     color: #B3B3B3;
     text-indent: 20px;
-    appearance:none;
     -moz-appearance:none;
     -webkit-appearance:none;
     background-image: url(../images/icon-7.png);
