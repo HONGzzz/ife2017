@@ -3,6 +3,8 @@ class Observer {
         this.data = data
         this.walk(data);
     }
+
+    // 遍历对象
     walk(data) {
         let val;
         for (let key in data) {
@@ -15,6 +17,8 @@ class Observer {
             }
         }
     }
+    
+    //  监听对象的值
     convert(key, value) {
         Object.defineProperty(this.data, key, {
             configurable: true,
@@ -24,6 +28,7 @@ class Observer {
                 console.log('新的' + key + '=' + newVal)
                 if (newVal === value) return;
                 value = newVal;
+                // 新值如果是对象,则继续创建Observer
                 if (newVal && typeof newVal === 'object') {
                     new Observer(newVal);
                 }
@@ -35,6 +40,7 @@ class Observer {
         })
     }
 }
+
 let data = {
     user: {
         name: "zzz",
