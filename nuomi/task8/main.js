@@ -1,8 +1,13 @@
 let menu = document.getElementsByClassName('menu')[0];
 let content = document.getElementsByClassName('content');
 
-document.querySelector('body').oncontextmenu = (e) => {
+// 取消默认事件
+document.documentElement.oncontextmenu=function(){
     return false;
+}
+// 点击其他地方，菜单消失
+document.documentElement.onclick=function () {
+    menu.style.display = 'none';
 }
 
 for (let i = 0; i < content.length; i++) {
@@ -25,6 +30,3 @@ for (let i = 0; i < content.length; i++) {
         }
     });
 }
-document.documentElement.addEventListener("click", function (e) { //点击其他地方菜单消失，可恢复默认的菜单事件
-    menu.style.display = 'none';
-})
