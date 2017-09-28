@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            height: 100%;
+        }
+
+        body {
+            padding: 20px;
+            height: 80%;
+        }
+
+        .container {
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            align-content: space-around;
+            justify-content: space-between;
+        }
+
+        .box {
+            box-sizing: border-box;
+            border: 1px solid #f00;
+            width: 150px;
+        }
+
+        .one {
+            height: 120px;
+        }
+
+        .two {
+            height: 100px;
+        }
+
+        .three {
+            height: 40px;
+        }
+
+        .four {
+            height: 200px;
+            border-color: #00f;
+        }
+
+        @media all and (max-width: 640px) {
+            .four {
+                order: -1;
+            }
+            .container {
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="one box"></div>
+        <div class="two box"></div>
+        <div class="three box"></div>
+        <div class="four box"></div>
+    </div>
+</body>
+
+</html>
