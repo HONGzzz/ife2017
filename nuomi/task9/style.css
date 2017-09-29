@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 40px;
+}
+
+.panel {
+  margin: 5px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.panel label {
+  display: block;
+  border: none;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: #ccc;
+  cursor: pointer;
+}
+
+.panel label:hover {
+  text-decoration: underline;
+}
+
+.panel .text {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.panel input[type='radio'] {
+  display: none;
+}
+
+.panel input[type='radio']:checked + .text {
+  height: 55px;
+}
