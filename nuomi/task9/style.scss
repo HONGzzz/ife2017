@@ -1,9 +1,9 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     padding: 40px;
 }
 
@@ -19,13 +19,13 @@ body{
         height: 40px;
         line-height: 40px;
         text-align: center;
-        background: #ccc;   
+        background: #ccc;
         cursor: pointer;
     }
-    label:hover{
-        text-decoration: underline; 
+    label:hover {
+        text-decoration: underline;
     }
-    .text{
+    .text {
         height: 0;
         overflow: hidden;
         transition: all 0.5s;
@@ -33,7 +33,7 @@ body{
     input[type='radio'] {
         display: none;
     }
-    input[type='radio']:checked+.text{
+    input[type='radio']:checked+.text {
         height: 55px;
     }
 }
