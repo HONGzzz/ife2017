@@ -1,5 +1,11 @@
 # ife2017
 
+所有项目都可通过此链接预览
+
+>[GitHub & BitBucket HTML Preview](http://htmlpreview.github.io/)
+
+<br>
+
 ### 小薇学院
  
 [任务二：零基础HTML及CSS编码（一）](https://github.com/hongzzz/ife2017/tree/master/html/task2)
