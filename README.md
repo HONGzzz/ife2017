@@ -1,6 +1,6 @@
 # ife2017
 
-所有项目都可通过此链接预览
+所有习题都可通过此链接预览
 
 >[GitHub & BitBucket HTML Preview](http://htmlpreview.github.io/)
 
