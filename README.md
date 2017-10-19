@@ -25,7 +25,7 @@
 
 [任务五：基础JavaScript练习（二）](https://github.com/hongzzz/ife2017/tree/master/javascript/task5)
 
-###
+###百度糯米前端技术学院
 
 [有趣的鼠标悬浮模糊效果](https://github.com/hongzzz/ife2017/tree/master/nuomi/task1)
 
