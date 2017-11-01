@@ -35,7 +35,7 @@
 
 [自定义checkbox， radio样式](https://github.com/hongzzz/ife2017/tree/master/nuomi/task6) [预览](https://hongzzz.github.io/ife2017/nuomi/task6)
 
-[自定义网页右键菜单](https://github.com/hongzzz/ife2017/tree/master/nuomi/task8) [预览](https://hongzzz.github.io/ife2017/nuomi/tas)
+[自定义网页右键菜单](https://github.com/hongzzz/ife2017/tree/master/nuomi/task8) [预览](https://hongzzz.github.io/ife2017/nuomi/task8)
 
 [使用CSS实现折叠面板](https://github.com/hongzzz/ife2017/tree/master/nuomi/task9) [预览](https://hongzzz.github.io/ife2017/nuomi/task9)
 
